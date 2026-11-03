@@ -2,6 +2,8 @@
 
 A small pixel-style aquarium game built with HTML, CSS and JavaScript.
 
+# link: https://pixaqua.netlify.app/
+
 ## Features
 
 - Buy and raise different fish.
