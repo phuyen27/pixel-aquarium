@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>Nuôi cá</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JavaScript: phải load đúng thứ tự -->
+    <script src="js/data.js" defer></script>
+    <script src="js/sprites.js" defer></script>
+    <script src="js/scene.js" defer></script>
+    <script src="js/game.js" defer></script>
+    <script src="js/ui.js" defer></script>
+    <script src="js/save.js" defer></script>
+</head>
+
+<body>
+
+<div class="w">
+
+    <!-- Header -->
+    <h1>
+        <span>🐠 Nuôi cá</span>
+        <span id="coins">🪙 0</span>
+    </h1>
+
+    <!-- Game canvas -->
+    <div class="stage">
+
+        <canvas id="c" width="800" height="440"></canvas>
+
+        <!-- Notifications -->
+        <div id="toasts"></div>
+
+        <!-- Navigation -->
+        <div id="nav">
+            <button class="ib"
+                    id="tankbtn"
+                    data-tip="Chọn bể">
+                🏞️
+            </button>
+        </div>
+
+        <!-- Save popup -->
+        <div id="savepop" hidden>
+            <div class="panel">
+
+                <div class="ph">
+                    <span>💾 Sao lưu</span>
+                    <button class="ib" id="sclose"
+                            data-tip="Đóng">✕</button>
+                </div>
+
+                <p class="sp">
+                    Mã này chứa xu, cá và bể của bạn.
+                    Lưu lại, rồi dán vào máy khác và bấm Khôi phục.
+                </p>
+
+                <textarea id="scode"
+                          rows="4"
+                          spellcheck="false"></textarea>
+
+                <div class="row">
+                    <button id="scopy">📋 Sao chép</button>
+                    <button id="sload">⬇ Khôi phục từ mã</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tank popup -->
+        <div id="tankpop" hidden>
+            <div class="panel">
+
+                <div class="ph">
+                    <span>🏞️ Chọn bể</span>
+                    <button class="ib" id="tclose"
+                            data-tip="Đóng">✕</button>
+                </div>
+
+                <div id="tanks"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Game message -->
+    <div id="msg">
+        Chạm vào bể để thả thức ăn · di chuột để cá bơi theo
+    </div>
+
+    <!-- Fish shop -->
+    <div class="sec">
+        🐠 Cá <span id="pgi"></span>
+    </div>
+
+    <div class="car">
+        <button id="prev">‹</button>
+        <div class="row" id="shop"></div>
+        <button id="next">›</button>
+    </div>
+
+    <!-- Game controls -->
+    <div class="row">
+        <button id="pause">⏸ Tạm dừng</button>
+        <button id="clean">🧽 Dọn bể (miễn phí)</button>
+        <button id="reset">↺ Chơi lại</button>
+    </div>
+
+</div>
+
+</body>
+</html>

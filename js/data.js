@@ -1,0 +1,40 @@
+const T = [
+  {n:'Cá vàng',c:'#ffb53a',c2:'#ff7b00',pat:'belly',p:20,v:1},
+  {n:'Cá hề',c:'#ff6a2b',c2:'#e24a10',pat:'stripes',pc:'#fff',p:50,v:2.5},
+  {n:'Cá bảy màu',c:'#5ad1ff',c2:'#8a5cf6',pat:'spots',pc:'#ff5ca8',L:1.3,H:.8,p:90,v:4},
+  {n:'Cá neon',c:'#2b6cff',c2:'#ff3b5c',pat:'neon',pc:'#44f0ff',L:1.3,H:.7,p:140,v:7},
+  {n:'Cá betta',c:'#d81b78',c2:'#6a1fb0',pat:'scales',pc:'#ff8fd0',L:1.2,H:1.1,p:200,v:10},
+  {n:'Cá thần tiên',c:'#f6e9a6',c2:'#d9b84a',pat:'stripes',pc:'#3a3a3a',L:1.05,H:1.8,p:300,v:15},
+  {n:'Cá koi',c:'#fffaf0',c2:'#ffd9b8',pat:'spots',pc:'#ff5a1f',L:1.8,H:.95,p:450,v:24},
+  {n:'Cá rồng',c:'#f0384a',c2:'#ffb703',pat:'scales',pc:'#ffd166',L:2.1,H:1,p:800,v:50},
+  {n:'Cá hồng',c:'#ff8fb1',c2:'#e0527f',pat:'belly',p:120,v:6},
+  {n:'Cá mandarin',c:'#25c2a0',c2:'#ff7a1a',pat:'spots',pc:'#ff7a1a',p:260,v:12},
+  {n:'Cá nóc',c:'#ffd23f',c2:'#e0a100',pat:'spots',pc:'#b87400',p:350,v:18},
+  {n:'Cá tang xanh',c:'#2a7de1',c2:'#ffd400',pat:'stripes',pc:'#10265c',p:380,v:20},
+  {n:'Cá mập con',c:'#9fb2c6',c2:'#5a6b80',pat:'belly',p:600,v:35},
+  {n:'Cá ngựa',c:'#ffb347',c2:'#e07b1a',pat:'spots',pc:'#a8480a',k:'sea',p:500,v:28},
+  {n:'Sứa',c:'#a8e6ff',c2:'#e86bff',pat:'belly',pc:'#ff9bf5',k:'jelly',p:700,v:40},
+  {n:'Hàu ngọc trai',c:'#8a7a9a',c2:'#5e5270',pat:'spots',pc:'#c8bdd6',k:'oyster',p:900,v:55},
+  {n:'Cá thiên đường',c:'#ff5a3c',c2:'#2a5bd7',pat:'stripes',pc:'#ffffff',p:220,v:11},
+  {n:'Cá bống',c:'#c9a66b',c2:'#8b6b3d',pat:'spots',pc:'#6b4e28',p:70,v:3},
+  {n:'Rùa biển',c:'#4fae5e',c2:'#2f7a3c',pat:'spots',pc:'#7ccf6b',k:'turtle',p:1200,v:70},
+  {n:'Cua',c:'#ff5d4d',c2:'#c1281c',pat:'spots',pc:'#ff8a7a',k:'floor',p:450,v:25},
+  {n:'Bạch tuộc',c:'#ff7a5c',c2:'#c2410c',pat:'spots',pc:'#ffb199',k:'jelly',p:1000,v:60},
+  {n:'Cá đuối',c:'#6aa6d8',c2:'#2f5f8f',pat:'spots',pc:'#cfe8ff',p:1500,v:85},
+  {n:'Sao biển',c:'#ff8a3d',c2:'#d9501c',pat:'spots',pc:'#ffb36b',k:'floor',p:180,v:9},
+  {n:'Cá chình',c:'#3fa37a',c2:'#1f6b4f',pat:'spots',pc:'#8fe0b8',p:520,v:29},
+  {n:'Cá lồng đèn',c:'#4a4a6e',c2:'#2c2c48',pat:'spots',pc:'#ffe27a',p:1800,v:100},
+  {n:'Cá heo',c:'#6b8fb3',c2:'#3f5f80',pat:'belly',p:2500,v:140},
+  {n:'Tôm',c:'#ff9a76',c2:'#e0603a',pat:'spots',pc:'#ffd0bd',k:'floor',p:210,v:10},
+  {n:'Cá bướm',c:'#fff0a0',c2:'#f5b800',pat:'stripes',pc:'#202020',p:330,v:17}
+];
+
+const TK = [
+  {n:'Bể san hô',p:0,t:[100,205,240],t2:[15,85,150],m:0},
+  {n:'Bể rừng tảo',p:1500,t:[70,190,120],t2:[10,70,50],m:.6},
+  {n:'Bể hang động',p:3500,t:[90,70,170],t2:[20,15,60],m:.65},
+  {n:'Bể băng giá',p:7000,t:[190,240,255],t2:[60,130,190],m:.6},
+  {n:'Bể núi lửa',p:12000,t:[210,100,60],t2:[60,15,15],m:.7},
+  {n:'Bể kẹo ngọt',p:20000,t:[255,170,220],t2:[130,90,210],m:.65},
+  {n:'Bể vũ trụ',p:35000,t:[40,40,110],t2:[5,5,30],m:.85}
+];
